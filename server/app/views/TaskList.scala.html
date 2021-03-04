@@ -1,0 +1,13 @@
+@(completedTasks: Seq[String])
+
+@main("Completed Tasks") {
+
+  <h2>Completed List of Play Tasks</h2>
+  <ul>
+    @for(task <- completedTasks) {
+      <li>@task</li>
+    }
+  </ul>
+
+  <div id="root"></div>
+}

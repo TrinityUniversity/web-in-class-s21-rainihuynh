@@ -1,6 +1,6 @@
-package edu.trinity.videoquizreact
+package scala
 
-import edu.trinity.videoquizreact.shared.SharedMessages
+import shared.SharedMessages
 import org.scalajs.dom
 
 import slinky.core._
@@ -13,7 +13,7 @@ object ScalaJSExample {
     // dom.document.getElementById("scalajsShoutOut").textContent = SharedMessages.itWorks
     println("Call the react stuff.")
     ReactDOM.render(
-      h1("Hello, world!"),
+      null,
       dom.document.getElementById("root")
     )
 

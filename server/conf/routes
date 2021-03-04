@@ -3,7 +3,13 @@
 # ~~~~
 
 # Home page
-GET        /                             edu.trinity.videoquizreact.controllers.Application.index
+GET        /                            controllers.Application.index
+
+# Playtest get
+GET        /PlayTest                    controllers.PlayTest.test
+
+# Completed tasks list
+GET        /CompletedTasks              controllers.CompletedTasks.taskList
 
 # Prefix must match `play.assets.urlPrefix`
 GET        /assets/*file                 controllers.Assets.at(file)
